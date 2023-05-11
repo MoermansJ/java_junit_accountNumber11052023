@@ -7,7 +7,6 @@
     <list default="true" id="3a0d9441-d97d-4a21-b8de-3f55e7c6de76" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/be/intecbrussel/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/intecbrussel/AccountTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +95,7 @@
     <servers />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/java_junit_accountNumber11052023$AccountTest.ic" NAME="AccountTest Coverage Results" MODIFIED="1683807049133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/java_junit_accountNumber11052023$AccountTest.ic" NAME="AccountTest Coverage Results" MODIFIED="1683807225037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>be.intecbrussel.*</FILTER>
     </SUITE>
   </component>

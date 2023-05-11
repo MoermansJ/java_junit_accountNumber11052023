@@ -1,7 +1,5 @@
 package be.intecbrussel;
 
-import java.math.BigInteger;
-
 public class Account {
     //properties
     private String accountNumber;
@@ -27,7 +25,7 @@ public class Account {
 
     //custom methods
     private boolean accountNumberValidation(String accountNumber) {
-        //Form validation -> regex for XXX/XXXXXXX/XX where X is a number 0 - 9
+        //Form validation -> regex for XXX-XXXXXXX-XX where X is a decimal digit
         if (!accountNumber.matches("\\d{3}-\\d{7}-\\d{2}")) {
             throw new IllegalArgumentException("Incomplete account number");
         }
