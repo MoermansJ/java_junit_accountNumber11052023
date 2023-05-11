@@ -1,8 +1,9 @@
 package be.intecbrussel;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -16,7 +17,7 @@ class AccountTest {
     @Test
     void shouldReturnEqualsWhenCreatingAccountWithCorrectAccountNumber() {
         //given
-        String accountNumber = "123/1234567/84";
+        String accountNumber = "123-1234567-84";
 
         //when
         account = new Account(accountNumber);
@@ -25,16 +26,13 @@ class AccountTest {
         assertEquals(account.getAccountNumber(), accountNumber);
     }
 
-    @Test
-    void shouldThrowIllegalArgumentExceptionWhenCreatingAccountWithIncorrectAccountNumber() {
-        //given
-        String accountNumber = "23/1234567/12";
-
+    @ParameterizedTest
+    @ValueSource(strings = {"123-1234567-12", "23-12345678-12", "000-0000001-99"})
+    void shouldThrowIllegalArgumentExceptionWhenCreatingAccountWithIncorrectAccountNumber(String incorrectAccountNumber) {
         //when
-        Executable executable = () -> new Account(accountNumber);
+        Executable executable = () -> new Account(incorrectAccountNumber);
 
         //then
         assertThrows(IllegalArgumentException.class, executable);
     }
-
 }
